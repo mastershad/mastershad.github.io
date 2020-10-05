@@ -1,0 +1,132 @@
+$cr1: rgba(0,0,0, .4)
+$cr2: rgb(60, 60, 60)
+$cr3: rgb(80, 80, 80)
+
+body
+	background-image: url(../img/bbody.jpg)
+	background-repeat:  no-repeat
+	background-size: cover
+	height: 100%
+	width: 100%
+
+	div
+		display:block
+
+	.wrapper
+		width: 1400px
+		margin: 0 auto
+		font-family: "Poppins", sans-serif
+		color: #333333
+		display: flex
+		align-items: stretch
+		flex-direction: row
+
+		.person
+			margin-top: 80px
+			width: 30%
+			background: $cr1
+			border-radius: 10px 0px 0px 10px
+			text-align: center
+
+			&__img
+				position: relative
+				background: rgba(0, 0, 0, .1)
+				padding: 30px 0 40px 0
+				margin-bottom: 25px
+
+				img
+					border-radius: 0px 0px 4px 4px
+
+			h1
+				text-decoration: underline
+				font-size: 35px
+
+			h2
+				font-size: 23px
+				padding: 30px 0 10px 0
+				color: $cr2
+
+			p
+				color: $cr3
+
+			&__in-web
+				padding: 25px 0 0 10px
+				font-size: 25px
+
+				a
+					color: $cr1
+
+					i:hover
+						-moz-transform: rotate(15deg)
+						-ms-transform: rotate(15deg)
+						-webkit-transform: rotate(15deg)
+						-o-transform: rotate(15deg)
+						transform:rotate(15deg)
+						color: $cr3
+
+		.about
+			margin-top: 80px
+			margin-left: 10px
+			padding-left: 10px
+			width: 70%
+			height: 620px
+			background: $cr1
+			border-radius: 0 10px 10px 0
+			display: grid
+			grid-template-rows: 1fr 2fr
+			grid-template-areas: "item reply"
+
+			.about__item
+				grid-area: item
+				padding-top: 2px
+
+				ul
+					list-style: none
+
+					.about__item--development
+						background: $cr1
+						border: 2px solid $cr2
+						color: $cr2
+						border-radius: 10px
+						width: 120px
+						margin: -10px
+
+						.devel
+							cursor: pointer
+							padding: 5px			
+							display: flex
+
+						#developments
+							display: none
+
+							a
+								text-decoration: none
+								color: $cr1
+
+							a:hover
+								color: $cr2
+								text-decoration: underline
+
+			li
+				margin-top: 30px
+				padding-left: 20px
+				padding-top: 20px
+				font-size: 20px
+				font-family: 'Ranchers', cursive
+
+		
+		#developments
+			display: none
+
+
+			.about__reply
+				grid-area:	reply
+				text-decoration: none
+
+				ul
+					list-style: none
+				
+
+
+
+
