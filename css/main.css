@@ -2,8 +2,6 @@ body {
   background-image: url(../img/bbody.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
 }
 body .wrapper {
   width: 1400px;
@@ -86,7 +84,7 @@ body .wrapper .about .about__item ul .about__item--development {
 body .wrapper .about .about__item ul .about__item--development .devel {
   cursor: pointer;
   padding: 5px;
-  display: flex;
+  text-align: center;
 }
 body .wrapper .about .about__item ul .about__item--development #developments {
   display: none;
@@ -106,15 +104,9 @@ body .wrapper .about li {
   font-size: 20px;
   font-family: "Ranchers", cursive;
 }
-body .wrapper #developments {
-  display: none;
-}
-body .wrapper #developments .about__reply {
+body .wrapper .about .about__reply {
   grid-area: reply;
   text-decoration: none;
-}
-body .wrapper #developments .about__reply ul {
-  list-style: none;
 }
 
 /*# sourceMappingURL=main.css.map */

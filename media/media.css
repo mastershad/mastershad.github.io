@@ -1,0 +1,74 @@
+@media only screen and (max-width: 850px), handheld (orientation: landscape) {
+	body{
+		background:background: rgb(18,142,240);
+		background: linear-gradient(180deg, rgba(246,255,237,1) 0%, rgba(163,255,245,1) 45%, rgba(158,173,255,0.8) 100%);
+
+	}
+	body .wrapper .person,
+	body .wrapper .about{
+		background: none;
+		margin-top: 0px;
+		}
+	body .wrapper .person__in-web a{
+    padding: 25px 10px 0 10px;
+	}
+	body .wrapper .about{
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 450px), handheld{
+	body .wrapper {
+		background:	none;
+		width: 100%;
+  		margin: 0 auto;
+  		display: block;
+  		align-items: stretch;
+  	}
+  	body .wrapper .person {
+  		background: none;
+  		width: 100%;
+  		margin: 0 auto;
+		border-radius: 10px;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "person__img title1"
+							"person__img title2"
+							"person__img title3"
+							"person__img title4";
+	}
+	.title1, .title2, .title3, .title4{
+		height: 55px;
+	}
+	body .wrapper .person__in-web{
+		font-size: 35px;
+		padding: 0;
+	}
+	body .wrapper .person__in-web a{
+    padding: 0;
+	}
+	body .wrapper .person__img{
+		grid-area: person__img;
+		background: none;
+		padding:0;
+ 		margin-bottom: 15px;
+	}
+	body .wrapper .title{
+		grid-area: title;
+		position: relative;
+	}
+	body .wrapper .about {
+		background: none;
+		width: 100%;
+		border-radius:10px;
+		margin-left: 0px;
+    	padding-left: 0px;
+	}
+	body .wrapper .about .about__item ul .about__item--development {
+		columns: #000;
+	}
+	body .wrapper .about li{
+		padding-left: 0px;
+	}
+}
+}
