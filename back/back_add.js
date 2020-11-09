@@ -4,3 +4,15 @@ function algGraphs(){
     
 }
 
+function skills(){
+    let popup = document.getElementById('feMap');
+    popup.classList.toggle('show');
+    
+}
+
+function Exit(){
+    let exit = document.getElementById('exit');  
+
+    skills();
+          
+}

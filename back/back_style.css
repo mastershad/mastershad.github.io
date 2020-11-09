@@ -1,28 +1,55 @@
-.bg_main{
+.exit{    
+    height: 25px;
+    width: 25px;
+    overflow: visible;
+}
+
+.back{
+    visibility: hidden;
+	-webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;  
+    overflow: hidden;  
+    
+}
+
+.bg_main, .femap{
     visibility: hidden;
     position: absolute;
     display: block;
     cursor: pointer;
+    z-index: 1;
+}
+
+.bg_main{
     margin: -550px 0 0 -400px;
     width: 860px;
     height: 500px;
-    z-index: 1;
     background: rgb(133, 190, 204);
     border-radius: 10px;
-    border:4px solid #c1e7ee
+    border:4px solid #c1e7ee;
+
 }
+
+.femap {
+    margin:-500px 0 0 -600px;
+    width: 1200px;
+    height: 900px;
+}
+
 
  .bg_main::after{
     content: "";    
     position: absolute; 
+
     
 
 }
 .show{
 	visibility: visible;
 	-webkit-animation: fadeIn 1s;
-	animation: fadeIn 1s;
-}								
+    animation: fadeIn 1s;    
+}
+								
 @-webkit-keyframes fadeIn{
     from{opacity: 0;}
     to{opacity: 1;}
@@ -32,3 +59,41 @@
     from{opacity: 0;}
     to{opacity: 1;}
 }
+
+.game {
+    display: inline-block;
+    position: relative;
+}
+.game div{
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 4px;
+    border: rgb(175, 155, 248) solid 2px;
+    border-radius: 12px;
+    background: rgb(117, 156, 240);
+}
+
+.game-zone{
+    border: springgreen solid 4px;
+    height: 84.5%;
+    border-radius: 10px;
+}
+
+.popup{
+	position: relative;
+	display: inline-block;
+}
+.popup span{
+    margin-left: 300px;
+}
+.popup:hover {
+	color: rgb(80, 80, 80);
+	cursor: pointer;
+}
+.bg_main{
+	text-align: center;
+}					
+span{
+	color: rgb(55, 50, 66);
+}
+

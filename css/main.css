@@ -109,23 +109,11 @@ body .wrapper .about .about__reply {
   grid-area: reply;
   text-decoration: none;
 }
+body .wrapper .about .about__reply a {
+  color: rgba(0, 0, 0, 0.4);
+}
 body .wrapper .about .about__reply__nextlvl {
   display: flex;
-}
-body .wrapper .about .about__reply__nextlvl .popup {
-  position: relative;
-  display: inline-block;
-  margin-left: 300px;
-}
-body .wrapper .about .about__reply__nextlvl .popup:hover {
-  color: #505050;
-  cursor: pointer;
-}
-body .wrapper .about .about__reply__nextlvl .bg_main {
-  text-align: center;
-}
-body .wrapper .about .about__reply__nextlvl .bg_main span {
-  color: #25066d;
 }
 
 /*# sourceMappingURL=main.css.map */
