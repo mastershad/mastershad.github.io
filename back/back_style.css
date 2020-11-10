@@ -81,7 +81,8 @@
 
 .popup{
 	position: relative;
-	display: inline-block;
+    display: inline-block;
+    text-decoration: underline;
 }
 .popup span{
     margin-left: 300px;
