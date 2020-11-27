@@ -82,10 +82,17 @@ body .wrapper .about .about__item ul .about__item--development {
   width: 120px;
   margin: -10px;
 }
-body .wrapper .about .about__item ul .about__item--development .devel {
+body .wrapper .about .about__item ul .about__item--development .develo {
   cursor: pointer;
   padding: 5px;
+}
+body .wrapper .about .about__item ul .about__item--development .develo .acenter {
+  margin: 5px 10px;
   text-align: center;
+}
+body .wrapper .about .about__item ul .about__item--development .develo .acenter a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
 }
 body .wrapper .about .about__item ul .about__item--development #developments {
   display: none;
