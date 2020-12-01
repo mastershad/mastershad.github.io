@@ -93,6 +93,9 @@ body .wrapper .about .about__item ul .about__item--development .develo .acenter 
   text-decoration: none;
   color: #193c5a;
 }
+body .wrapper .about .about__item ul .about__item--development .develo .acenter a:hover {
+  font-size: 110%;
+}
 body .wrapper .about .about__item ul .about__item--development #developments {
   display: none;
 }
