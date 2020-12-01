@@ -18,7 +18,11 @@
 }
 
 @media only screen and (max-width: 450px), handheld{
+	body{
+		width: 300%;
+	}
 	body .wrapper {
+		width: 100%;
 		background:	none;
 		width: 100%;
   		margin: 0 auto;
