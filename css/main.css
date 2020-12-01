@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/bbody.jpg);
+  background-image: url(../img/walp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -7,7 +7,7 @@ body .wrapper {
   width: 1400px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
-  color: #333333;
+  color: #3c3c3c;
   display: flex;
   align-items: stretch;
   flex-direction: row;
@@ -15,7 +15,7 @@ body .wrapper {
 body .wrapper .person {
   margin-top: 80px;
   width: 30%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(201, 201, 201, 0.4);
   border-radius: 10px 0px 0px 10px;
   text-align: center;
 }
@@ -36,24 +36,24 @@ body .wrapper .person h1 {
 body .wrapper .person h2 {
   font-size: 23px;
   padding: 30px 0 10px 0;
-  color: #3c3c3c;
+  color: #505050;
 }
 body .wrapper .person p {
-  color: #505050;
+  color: #3c3c3c;
 }
 body .wrapper .person__in-web {
   padding: 25px 0 0 10px;
   font-size: 25px;
 }
 body .wrapper .person__in-web a {
-  color: rgba(0, 0, 0, 0.4);
+  color: #193c5a;
 }
 body .wrapper .person__in-web a i:hover {
   -moz-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
   -webkit-transform: rotate(15deg);
   -o-transform: rotate(15deg);
-  color: #505050;
+  color: #3c3c3c;
 }
 body .wrapper .about {
   margin-top: 80px;
@@ -61,7 +61,7 @@ body .wrapper .about {
   padding-left: 10px;
   width: 70%;
   height: 620px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(201, 201, 201, 0.4);
   border-radius: 0 10px 10px 0;
   display: grid;
   grid-template-rows: 1fr 2fr;
@@ -75,9 +75,8 @@ body .wrapper .about .about__item ul {
   list-style: none;
 }
 body .wrapper .about .about__item ul .about__item--development {
-  background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #3c3c3c;
-  color: #3c3c3c;
+  border: 2px solid #505050;
+  color: #505050;
   border-radius: 10px;
   width: 120px;
   margin: -10px;
@@ -92,17 +91,17 @@ body .wrapper .about .about__item ul .about__item--development .develo .acenter 
 }
 body .wrapper .about .about__item ul .about__item--development .develo .acenter a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.4);
+  color: #193c5a;
 }
 body .wrapper .about .about__item ul .about__item--development #developments {
   display: none;
 }
 body .wrapper .about .about__item ul .about__item--development #developments a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.4);
+  color: #193c5a;
 }
 body .wrapper .about .about__item ul .about__item--development #developments a:hover {
-  color: #3c3c3c;
+  color: #505050;
   text-decoration: underline;
 }
 body .wrapper .about li {
@@ -116,8 +115,11 @@ body .wrapper .about .about__reply {
   grid-area: reply;
   text-decoration: none;
 }
+body .wrapper .about .about__reply .popup {
+  color: #193c5a;
+}
 body .wrapper .about .about__reply a {
-  color: rgba(0, 0, 0, 0.4);
+  color: #193c5a;
 }
 body .wrapper .about .about__reply__nextlvl {
   display: flex;

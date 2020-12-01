@@ -1,9 +1,9 @@
-$cr1: rgba(0,0,0, .4)
-$cr2: rgb(60, 60, 60)
-$cr3: rgb(80, 80, 80)
-
+$cr1: rgb(25, 60, 90)
+$cr2: rgb(80, 80, 80)
+$cr3: rgb(60, 60, 60)
+$cr4: rgba(201,201,201, .4)
 body
-	background-image: url(../img/bbody.jpg)
+	background-image: url(../img/walp.jpg)
 	background-repeat:  no-repeat
 	background-size: cover	
 
@@ -14,7 +14,7 @@ body
 		width: 1400px
 		margin: 0 auto
 		font-family: "Poppins", sans-serif
-		color: #333333
+		color: $cr3
 		display: flex
 		align-items: stretch
 		flex-direction: row
@@ -22,7 +22,7 @@ body
 		.person
 			margin-top: 80px
 			width: 30%
-			background: $cr1
+			background: $cr4
 			border-radius: 10px 0px 0px 10px
 			text-align: center
 
@@ -69,7 +69,7 @@ body
 			padding-left: 10px
 			width: 70%
 			height: 620px
-			background: $cr1
+			background: $cr4
 			border-radius: 0 10px 10px 0
 			display: grid
 			grid-template-rows: 1fr 2fr
@@ -83,7 +83,6 @@ body
 					list-style: none
 
 					.about__item--development
-						background: $cr1
 						border: 2px solid $cr2
 						color: $cr2
 						border-radius: 10px
@@ -123,6 +122,9 @@ body
 			.about__reply
 				grid-area:	reply
 				text-decoration: none
+
+				.popup
+					color: $cr1
 
 				a
 					color: $cr1
