@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 450px), handheld{
 	body{
-		width: 300%;
+		width: 350%;
 	}
 	body .wrapper {
 		width: 100%;
@@ -35,14 +35,30 @@
   		margin: 0 auto;
 		border-radius: 10px;
 		display: grid;
-		grid-template-rows: 1fr 1fr;
 		grid-template-areas: "person__img title1"
 							"person__img title2"
 							"person__img title3"
 							"person__img title4";
 	}
+	body .wrapper .about li .femap {
+		margin: -550px 0 0 -370px;
+		transform: rotate(90deg)
+	}
 	.title1, .title2, .title3, .title4{
 		height: 55px;
+	}
+	body .wrapper .person h2 {
+		font-size: 	40px;
+		padding: 0;	
+	}
+	body .wrapper .person h1 {
+		font-size: 4em;
+	}
+	body .wrapper .person p {
+		font-size: 	30px;
+	}
+	body .wrapper .about .about__item ul .about__item--development .develo .acenter {
+		margin: 1px 1px;
 	}
 	body .wrapper .person__in-web{
 		font-size: 35px;
@@ -66,13 +82,13 @@
 		width: 100%;
 		border-radius:10px;
 		margin-left: 0px;
-    	padding-left: 160px;
 	}
 	body .wrapper .about .about__item ul .about__item--development {
 		columns: #000;
 	}
 	body .wrapper .about li{
+		font-size: 	33px;		
 		padding-left: 0px;
+		padding-bottom: 25px;
 	}
-}
 }
