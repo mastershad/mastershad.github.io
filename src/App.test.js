@@ -30,3 +30,15 @@ test('remembers the chosen language across remounts', () => {
   render(<App />);
   expect(screen.getByText('Frontend-розробник')).toBeInTheDocument();
 });
+
+test('toggles between light and dark theme and remembers the choice', () => {
+  const { unmount } = render(<App />);
+  const toggle = screen.getByRole('button', { name: /switch to dark theme/i });
+
+  userEvent.click(toggle);
+  expect(document.documentElement.getAttribute('data-theme')).toBe('dark');
+  unmount();
+
+  render(<App />);
+  expect(document.documentElement.getAttribute('data-theme')).toBe('dark');
+});

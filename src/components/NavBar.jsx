@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 
 function NavBar() {
   const { t } = useLanguage();
@@ -14,7 +15,10 @@ function NavBar() {
         <a href="#education">{t.nav.education}</a>
         <a href="#contact">{t.nav.contact}</a>
       </div>
-      <LanguageSwitcher />
+      <div className="navbar__controls">
+        <LanguageSwitcher />
+        <ThemeToggle />
+      </div>
     </nav>
   );
 }

@@ -1,5 +1,6 @@
 import './App.css';
 import { LanguageProvider } from './i18n/LanguageContext';
+import { ThemeProvider } from './theme/ThemeContext';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -16,20 +17,22 @@ function Footer() {
 
 function App() {
   return (
-    <LanguageProvider>
-      <div className="app">
-        <NavBar />
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Education />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <div className="app">
+          <NavBar />
+          <main>
+            <Hero />
+            <About />
+            <Skills />
+            <Experience />
+            <Education />
+            <Contact />
+          </main>
+          <Footer />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 

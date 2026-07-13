@@ -1,13 +1,12 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
-import profilePhoto from '../assets/profile.png';
 
 function Hero() {
   const { t } = useLanguage();
 
   return (
     <header className="hero">
-      <img className="hero__photo" src={profilePhoto} alt={t.hero.name} />
+      <img className="hero__photo" src={`${process.env.PUBLIC_URL}/foto.webp`} alt={t.hero.name} />
       <h1 className="hero__name">{t.hero.name}</h1>
       <p className="hero__role">{t.hero.role}</p>
       <p className="hero__location">{t.hero.location}</p>
