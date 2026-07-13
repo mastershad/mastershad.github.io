@@ -1,15 +1,281 @@
-.app-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-areas: "h h"
-                      "n c";
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 15% 85%;
-  grid-gap: 10px;
+:root {
+  --ink: #0f172a;
+  --ink-soft: #475569;
+  --ink-faint: #94a3b8;
+  --paper: #f8fafc;
+  --paper-raised: #ffffff;
+  --line: #e2e8f0;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
 }
 
-.app-wrapper-content {
-    grid-area: c;
-    background: url(https://ramki-vsem.ru/fon/sinij-fon11.jpg);
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  z-index: 10;
+}
+
+.navbar__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.navbar__links a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.navbar__links a:hover {
+  color: var(--accent);
+}
+
+.language-switcher {
+  display: flex;
+  gap: 4px;
+}
+
+.language-switcher__button {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.language-switcher__button.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.language-switcher__name {
+  display: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 56px 0 40px;
+}
+
+.hero__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid var(--paper-raised);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.hero__name {
+  font-size: 2rem;
+  margin: 0 0 4px;
+}
+
+.hero__role {
+  font-size: 1.15rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.hero__location,
+.hero__tagline {
+  color: var(--ink-soft);
+  margin: 2px 0;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.button--primary {
+  background: var(--accent);
+  color: white;
+}
+
+.button--ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+/* Sections */
+.section {
+  padding: 36px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section__title {
+  font-size: 1.3rem;
+  margin: 0 0 16px;
+}
+
+.section__title--spaced {
+  margin-top: 32px;
+}
+
+.about__text {
+  color: var(--ink-soft);
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.skill-group__label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+
+.skill-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-group__list li {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 560px) {
+  .timeline__item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.timeline__period {
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.timeline__role {
+  font-weight: 600;
+}
+
+.timeline__org {
+  color: var(--accent);
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+
+.timeline__text {
+  color: var(--ink-soft);
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+/* Education */
+.education__school {
+  font-weight: 600;
+  margin: 0;
+}
+
+.education__degree {
+  color: var(--ink-soft);
+  margin: 4px 0 0;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.contact__cv-note {
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  margin-top: 16px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+  padding: 24px 0 8px;
 }

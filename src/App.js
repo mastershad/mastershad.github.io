@@ -1,25 +1,36 @@
 import './App.css';
-import React from 'react';
-import Header from './components/Header/Header';
-import NavBar from './components/NavBar/NavBar';
-import Profile from './components/Profile/Profile';
-import {Route} from 'react-router-dom';
-import DialogsContainer from './components/Dialogs/DialogsContainer';
+import { LanguageProvider } from './i18n/LanguageContext';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import { useLanguage } from './i18n/LanguageContext';
 
-const App = (props) => {
+function Footer() {
+  const { t } = useLanguage();
+  return <footer className="footer">{t.footer}</footer>;
+}
+
+function App() {
   return (
-    <div className='app-wrapper'>
-      <Header />
-      <NavBar />
-      <div className='app-wrapper-content'>          
-        <Route path='/Dialogs' 
-          render={ () => <DialogsContainer store={props.store}/> }/>
-
-        <Route path='/Profile'
-          render={ () => <Profile store={props.store} /> }/>
+    <LanguageProvider>
+      <div className="app">
+        <NavBar />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Education />
+          <Contact />
+        </main>
+        <Footer />
       </div>
-    </div>
-  )
+    </LanguageProvider>
+  );
 }
 
 export default App;
