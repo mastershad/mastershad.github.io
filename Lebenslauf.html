@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Lebenslauf - Ivan Yurkevych</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --sidebar-bg: #1e272e;
+            --accent-color: #00a8ff;
+            --main-text: #2f3640;
+            --light-text: #ffffff;
+            --section-bg: #f5f6fa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background: #dcdde1;
+            color: var(--main-text);
+            line-height: 1.35;
+            font-size: 11.5px;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 10px auto;
+            background: white;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 28%;
+            background: var(--sidebar-bg);
+            color: var(--light-text);
+            padding: 25px 15px;
+        }
+
+        .sidebar h1 { font-size: 20px; color: var(--accent-color); text-transform: uppercase; margin-bottom: 5px; }
+        .sidebar h2 { font-size: 13px; font-weight: normal; margin-bottom: 25px; border-bottom: 1px solid #485460; padding-bottom: 10px; }
+
+        .sidebar h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            margin: 20px 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p { margin-bottom: 8px; font-size: 10.5px; display: flex; align-items: center; }
+        .contact-info i { width: 18px; color: var(--accent-color); font-size: 12px; }
+
+        .skill-group { margin-bottom: 15px; }
+        .skill-group strong { display: block; font-size: 11px; margin-bottom: 4px; color: #d2dae2; }
+        .skill-group p { font-size: 10.5px; opacity: 0.9; margin-bottom: 8px; line-height: 1.3; }
+
+        /* Main Content */
+        .content { width: 72%; padding: 30px; }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--sidebar-bg);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--accent-color);
+            margin: 15px 0 10px 0;
+            padding-bottom: 3px;
+        }
+        .section-title:first-child { margin-top: 0; }
+
+        .profile-text { margin-bottom: 15px; font-style: italic; color: #353b48; }
+
+        .job-block { margin-bottom: 18px; }
+        .job-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 12px; color: #1e272e; }
+        .company-name { color: var(--accent-color); font-weight: bold; margin-bottom: 4px; display: block; }
+
+        ul { margin-left: 15px; margin-bottom: 8px; }
+        li { margin-bottom: 2px; }
+
+        .praxis-box {
+            background: var(--section-bg);
+            border-left: 3px solid #d2dae2;
+            padding: 6px 10px;
+            font-size: 10.5px;
+            margin-top: 5px;
+        }
+
+        .objective { background: #f1f2f6; padding: 10px; border-radius: 4px; border: 1px dashed var(--accent-color); }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; }
+            -webkit-print-color-adjust: exact;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="sidebar">
+        <h1>Ivan Yurkevych</h1>
+        <h2>LEBENSLAUF</h2>
+
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Nürnberg, Deutschland</p>
+            <p><i class="fas fa-phone"></i> 0151 72379597</p>
+            <p><i class="fas fa-envelope"></i> johnyorkit@gmail.com</p>
+            <p><i class="fab fa-linkedin"></i> linkedin.com/in/ivan-yurkevych-52a89b182</p>
+            <p><i class="fas fa-flag"></i> Staatsangehörigkeit: ukrainisch</p>
+        </div>
+
+        <h3>Technische Kompetenzen</h3>
+        <div class="skill-group">
+            <strong>Programmiersprachen & Technologien</strong>
+            <p>JavaScript (ES6+), React (Grundlagen TypeScript), REST APIs, Grundlagen von Node.js, Datenverarbeitung und Client-Server-Kommunikation</p>
+        </div>
+        <div class="skill-group">
+            <strong>Entwicklungsbezogene Fähigkeiten</strong>
+            <p>Strukturierte Codeanalyse, Debugging und Fehlersuche, API-Integration, Technische Dokumentation</p>
+        </div>
+        <div class="skill-group">
+            <strong>IoT-nahe Kenntnisse (Grundlagen)</strong>
+            <p>Verständnis von IoT-Architekturen, Event-basierte Systeme, Grundverständnis von MQTT, Interesse an Node-RED und Smart-Home-Systemen</p>
+        </div>
+
+        <h3>Überfachliche Kompetenzen</h3>
+        <div class="skill-group">
+            <p>• Strukturierte und analytische Arbeitsweise<br>
+               • Fähigkeit, komplexe Sachverhalte klar darzustellen<br>
+               • Erfahrung in Teamarbeit sowie in leitenden Rollen<br>
+               • Selbstständige Organisation von Arbeitsprozessen<br>
+               • Kontinuierliche Lernbereitschaft<br>
+               • Zielorientiertes Arbeiten auch unter Zeitdruck</p>
+        </div>
+
+        <h3>Sprachkenntnisse</h3>
+        <div class="skill-group">
+            <p>Deutsch: B1 (B2 in Vorbereitung)<br>
+            Englisch: Lesen technischer Dokumentation<br>
+            Russisch: Muttersprache<br>
+            Ukrainisch: Muttersprache</p>
+        </div>
+
+        <h3>Ausbildung</h3>
+        <div class="skill-group">
+            <p><strong>Charkiwer Nationale Universität der Künste I. P. Kotljarewskyj</strong><br>
+            Masterabschluss | 2007 – 2012</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section-title">Berufliches Profil</div>
+        <div class="profile-text">
+            <p>JavaScript-Entwickler mit mehrjähriger Erfahrung in Softwareentwicklung, technischer Lehre und organisatorischer Verantwortung.</p>
+            <p>Erfahren in der strukturierten Umsetzung technischer Aufgaben, der API-basierten Datenverarbeitung sowie in der verständlichen Vermittlung komplexer Inhalte.</p>
+            <p>Langjährige Tätigkeit in leitenden und koordinierenden Rollen mit Verantwortung für Teams, Projekte und organisatorische Prozesse.</p>
+            <p>Aktive berufliche Weiterentwicklung mit dem Ziel, im Bereich IoT, Automatisierung und Industrie 4.0 tätig zu sein und webbasierte Technologien im Kontext vernetzter технический Systeme einzusetzen.</p>
+        </div>
+
+        <div class="section-title">IT-Berufserfahrung</div>
+        
+        <div class="job-block">
+            <div class="job-header"><span>Dozent für Webentwicklung (JavaScript)</span><span>2022 – 2024</span></div>
+            <span class="company-name">Lemon School</span>
+            <ul>
+                <li>Entwicklung, Strukturierung und kontinuierliche Optimierung von JavaScript-Kursen</li>
+                <li>Vermittlung technischer Inhalte an Erwachsene und Jugendliche (Einzel- und Gruppenunterricht)</li>
+                <li>Aufbereitung komplexer Themen in didaktisch klarer und praxisnaher Form</li>
+                <li>Betreuung und fachliche Begleitung von Projektarbeiten</li>
+                <li>Individuelle Unterstützung von Teilnehmenden mit unterschiedlichen Vorkenntnissen</li>
+                <li>Enge Abstimmung mit Management und kontinuierliche Weiterentwicklung der Kursstruktur</li>
+            </ul>
+            <div class="praxis-box"><strong>Kompetenzen in der Praxis:</strong> Strukturierungsfähigkeit, Kommunikationsstärke, Verantwortungsbewusstsein, systematisches Arbeiten, kontinuierliche Verbesserung.</div>
+        </div>
+
+        <div class="job-block">
+            <div class="job-header"><span>Dozent für Frontend-Technologien (JavaScript, React, TypeScript)</span><span>2023 – 2024</span></div>
+            <span class="company-name">YBP Ukraine</span>
+            <ul>
+                <li>Entwicklung und Durchführung eigener Kurse in React und TypeScript</li>
+                <li>Planung und Präsentation technischer Inhalte</li>
+                <li>Betreuung von Praxisprojekten</li>
+                <li>Organisation und Dokumentation der Lernprozesse</li>
+                <li>Präsentation technischer Themen перед группами</li>
+                <li>Mitwirkung bei der Außendarstellung der Kurse</li>
+            </ul>
+            <div class="praxis-box"><strong>Kompetenzen in der Praxis:</strong> Eigeninitiative, Projektorganisation, Präsentationsfähigkeit, methodisches Arbeiten, selbstständige Verantwortung für Ergebnisse.</div>
+        </div>
+
+        <div class="job-block">
+            <div class="job-header"><span>Junior Entwickler (Projektarbeit)</span><span>10/2021 – 02/2022</span></div>
+            <span class="company-name">Realis.Network | Technologien: JavaScript, C#</span>
+            <ul>
+                <li>Mitarbeit in einem bestehenden Entwicklerteam</li>
+                <li>Schnelle Einarbeitung in bestehende Codestrukturen</li>
+                <li>Anpassung und Optimierung visueller Inhalte</li>
+                <li>Sammlung und Verarbeitung статистиischer Daten</li>
+                <li>API-basierte Kommunikation mit Backend-Systemen</li>
+                <li>Abstimmung mit Teammitgliedern zur Fehleranalyse und Problemlösung</li>
+            </ul>
+            <div class="praxis-box"><strong>Kompetenzen in der Praxis:</strong> Teamarbeit, analytisches Denken, Anpassungsfähigkeit, strukturierte Fehlersuche, техническая точность.</div>
+        </div>
+
+        <div class="job-block">
+            <div class="job-header"><span>Frontend Developer (Freelance)</span><span>07/2019 – 09/2021</span></div>
+            <span class="company-name">Technologien: JavaScript, React</span>
+            <ul>
+                <li>Entwicklung und Pflege von Benutzeroberflächen</li>
+                <li>Verarbeitung und Darstellung von Serverdaten</li>
+                <li>Implementierung und Nutzung von API-Schnittstellen</li>
+                <li>Selbstständige Organisation von Arbeitsprozessen</li>
+                <li>Planung und Priorisierung eigener Aufgaben</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Weitere Berufserfahrung – Leitung & Organisation</div>
+        <div class="job-block">
+            <div class="job-header"><span>Dirigent / Pädagoge / Organisator</span><span>2005 – 2020</span></div>
+            <span class="company-name">Verschiedene Bildungs- und Kultureinrichtungen, Ukraine</span>
+            <p style="margin-bottom: 5px;">Langjährige Tätigkeit in leitenden Funktionen innerhalb von Orchestern und Musikschulen.</p>
+            <ul>
+                <li>Aufbau, Leitung und Weiterentwicklung von Ensembles</li>
+                <li>Planung und Durchführung von Proben- und Arbeitsprozessen</li>
+                <li>Koordination von Gruppen unterschiedlicher Alters- und Erfahrungsstufen</li>
+                <li>Delegation von Aufgaben innerhalb der Organisation</li>
+                <li>Planung logistischer Prozesse (Reisen, Veranstaltungen, Auftritte)</li>
+                <li>Vorbereitung von Ensembles auf Wettbewerbe und öffentliche Auftritte</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Berufliches Ziel</div>
+        <div class="objective">
+            <p>Langfristige Entwicklung im Bereich IoT, Automatisierung und Industrie 4.0, mit Fokus auf der Integration von JavaScript-basierten Technologien in vernetzte technische Systeme sowie Smart-Home-Lösungen.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
